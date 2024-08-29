@@ -164,6 +164,6 @@ aside.active #toggle-aside:hover {
     color: #007BFF;
 }
 
-/* aside p, article {
+header, aside h2, h1 {
     font-family: sans-serif;
-} */
+} 
