@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-justify:newspaper;
+    font-family: 'Work Sans', sans-serif;
+    padding-bottom: 6rem;
+}
+
+mark {
+    background-color: gold;
+  }
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+/* Task Box Start */
+.task-box {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin: 0 4rem;
+    justify-content: space-evenly;
+}
+
+.task-box:nth-child(odd) {
+    background-color: #ccc;
+}
+
+.task-box:nth-child(even) {
+    background-color: #e6e6e6
+}
+
+.task-box * {
+    margin: 1rem;
+}
+
+.task-box h2 {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.task-box p {
+    flex-basis: 75%;
+}
+
+.task-box:last-child {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Task Box End */
+
+main > * {
+    margin: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.inner-block {
+    background-color: #333;
+    height: 30px;
+    width: 30px;
+    border: 1px white solid;
+}
+
+header {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #adadad;
+}
+
+header a {
+    display: block;
+    border: none;
+    box-sizing: border-box;
+    padding: 5px;
+    color: black;
+    text-wrap: nowrap;
+    letter-spacing: 0.05em;
+    /* rem versus pixel */
+}
+
+.active-nav {
+    border-bottom: 4px solid #953693;
+    padding-bottom: calc(5px - 4px);
+}
+
+header a:hover {
+    border-bottom: 4px solid #51E2FC;
+    padding-bottom: calc(5px - 4px);
+}
+
+header img {
+    width: 4rem;
+    height: 4rem;
+}
+
+nav {
+    width: 50%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2rem;
+    align-items: flex-end;
+}
+
+/* Pieces grid styling */
+
+
+
+#pieces-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 75%;
+} 
+
+article {
+    flex-basis: 1 1 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ccc;
+}
+
+.inner-block {
+    width: 25px;
+    height: 25px;
+}
+
+aside {
+    position: fixed;
+    margin:0;
+    top: 96px;
+    left: -300px; /* Initially hidden off-screen */
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.4);
+    transition: left 0.3s ease; /* Smooth slide-in effect */
+    padding: 3rem 1rem;
+    z-index: 1000; /* Ensures it stays above other content */
+    color: white;
+    font-family: "Work Sans", sans-serif;
+}
+
+.active {
+    left: 0; /* Slides the aside into view */
+}
+
+/* Styling for the toggle button */
+#toggle-aside {
+    position: absolute;
+    top: 70%;
+    right: -35px; /* Places the button outside the aside */
+    transform: translateY(-50%); /* Vertically centers the button */
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0px 5px 5px 0px; /* Rounded corners on the left */
+    cursor: pointer;
+    z-index: 1001; /* Ensures the button is on top */
+    font-size: 30px;
+}
+
+#toggle-aside:hover {
+    background-color: rgba(149, 54, 147, 0.98);
+}
+
+/* Styling the button when the aside is active */
+aside.active #toggle-aside {
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left */
+    right: 0px; /* Adjust this value to suit the button size */
+    background-color: white;
+    color:rgba(149, 54, 147, 0.98);
+}
+
+aside.active #toggle-aside:hover {
+    color: #007BFF;
+}
+
+/* aside p, article {
+    font-family: sans-serif;
+} */
