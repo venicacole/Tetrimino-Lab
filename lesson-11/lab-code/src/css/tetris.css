@@ -167,3 +167,45 @@ aside.active #toggle-aside:hover {
 header, aside h2, h1 {
     font-family: sans-serif;
 } 
+
+#tet-colors {
+    display: flex;
+
+}
+
+
+.color-preview:first-child {
+    color: #EA3D1E;
+
+
+}
+
+.color-preview:nth-child(1) {
+
+
+}
+
+.color-preview:nth-child(2) {
+
+
+}
+
+.color-preview:nth-child(3) {
+
+
+}
+
+.color-preview:nth-child(4) {
+
+
+}
+
+.color-preview:nth-child(5) {
+
+
+}
+
+.color-preview:last-child {
+
+
+}
