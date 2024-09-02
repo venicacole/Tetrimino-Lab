@@ -1,0 +1,3 @@
+Hi Jess! I feel that one win is that I'm doing THIS...I'm learning to code! Lol, let me focus! The biggest win from this lab is the fact that I kept trying until I got it. I started over a number of times, but came back and kept playing around with different code until I got it - using the inspect code helped tremendously.
+
+Concepts of Lab I still need to work on: Setting up the files needed for the lab gave me trouble. I'm sure there's more, but this is what stands out at the moment.
