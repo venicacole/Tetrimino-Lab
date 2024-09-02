@@ -136,6 +136,10 @@ aside {
     font-family: "Work Sans", sans-serif;
 }
 
+aside p, #pieces-grid {
+    font-family: sans-serif;   
+}
+
 .active {
     left: 0; /* Slides the aside into view */
 }
@@ -232,4 +236,18 @@ article {
 .tet-piece {
     background-color: #313131;
     border: 1px white solid;
+}
+
+
+#piece-l .tet-group:first-child {
+    order: 4;
+}
+
+#piece-l .inner-block.tet-piece {
+    order: 3;
+}
+
+#piece-l .inner-block.tet-piece:last-child {
+    order: 1;
+
 }
